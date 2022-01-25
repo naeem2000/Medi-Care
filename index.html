@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medi-Care</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="login.html">Login</a> 
+    <a href="register.html">Register</a>
+    <a href="https://sacoronavirus.co.za/" target="blank">COVID-19 Resource Portal</a>
+    <a href="#map">Medical centers & Pharmacies closest to you</a>
+    <a href="#contact">Contact</a>
+    <a href="terms.html">Terms & Conditions</a>
+  </div>
+  <div id="content">
+    <img src="unnamed.png" class="ribbon"/>
+</div>
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+    <div class="svg-container">
+        <svg viewbox="0 0 800 400" class="svg">
+          <path id="curve" fill="#50c6d8" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
+          </path>
+        </svg>
+      </div>
+      <header>
+        <h1>Medi-Care</h1>
+        <br>
+        <br>
+        <h3>Getting your doctor and medication, in the safety of your home.</h3>
+      </header>
+      <main>
+        <h3>Benefits of using Medi-Care</h3>
+        <br>
+        <br>
+        <div class="boxed">
+          <h4>Much Easier Access to Healthcare</h4>
+          <p>Medi-Care can be of great use for people who live in distant, rural areas. In absence of healthcare facilities nearby, patients can have their healthcare consultation directly via this web-app. All they need is a smartphone with a working internet connection.</p>
+          </div>
+      </span>
+          <br>
+          <div class="boxed">
+          <h4>Real time Treatment advice</h4>
+          <br>
+          <p>Medi-Care allows patients to ask anything related to their health from hospital staff-nurses, doctors. Patients can take remote advice related to drug schedule, emergency help etc. via a text from the web-app or can even send the voice note.</p>
+          </div>
+          <br>
+          <div class="boxed">
+          <h4>Save a Lot on Healthcare Costs</h4>
+          <br>
+          <p>Medi-Care offers patients the liberty of connecting to any healthcare service without physically visiting the hospital. This saves both your time and transportation cost.</p>
+      </div>
+          <br>
+          <div class="boxed">
+          <h4>Convenient Access to Electronic Health Records</h4>
+          <br>
+          <p>Medi-Care keeps EHRs (electronic health records), so that doctors could access them on demand. A single place for a patient’s clinical records saves the doctor’s time.</p>
+          </div>
+          <br>
+          <br>
+<br>
+<h3>Medical Centers & Pharmacies close to you</h3>
+<br>
+<div id="map"></div>
+<br>
+<h3>Contact Us</h3>
+<br>
+<div id="contact" class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">E-mail adress</label>
+    <input type="text" id="email" name="email" placeholder="Your E-mail adress..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+ 
+  <script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEyi8zWQY2OSj3WKbEZHlKrKCnjPUBh5w&callback=initMap">
+</script>
+</div>
+</main>
+      <footer>
+        <p>Medi-Care Web Application.</p>
+        <small>Terms and conditions apply.</small>
+      </footer>
+</body>
+</html>
